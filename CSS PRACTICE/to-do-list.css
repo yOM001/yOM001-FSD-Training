@@ -1,0 +1,50 @@
+body{
+    background-color:grey;
+}
+main{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+    border-radius: 10px; /* Rounded corners for a modern look */
+    padding: 20px; /* Add some padding for better spacing */
+    box-shadow: 0 0px 7px black;
+    max-width: 600px; /* Limit the width for better readability */
+    margin: 20px auto; /* Center the main content */
+}
+h1{
+    text-align: center;
+    color: black;
+    font-size: 2em; /* Larger font size for the title */
+}
+.todo-list{
+    text-decoration: none;
+    list-style-type:none; /* Remove default list styling */
+}
+.todo-item{
+    background-color: burlywood;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px 0;
+}
+.sub-item{
+    list-style: square;
+}
+.sub-item-link{
+    text-decoration: none;
+    font-weight: bold; /* Make the link text bold */
+}
+a:link{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+    color: grey;
+}
+a:hover{
+    color: black;
+}
+a:active{
+    color:red;
+}
+a:focus{
+    outline: 1px solid black;
+}

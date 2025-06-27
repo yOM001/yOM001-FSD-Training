@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Semantic Layout</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+    }
+    header, nav, main, footer {
+      padding: 1rem;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+    }
+    nav a {
+      text-decoration: none;
+    }
+    aside nav ul {
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with Main Navigation -->
+  <header>
+    <h1>My Website</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sidebar Navigation (e.g., Table of Contents) -->
+  <aside>
+    <nav aria-label="In-page navigation">
+      <h2>Contents</h2>
+      <ul>
+        <li><a href="#section1">Intro</a></li>
+        <li><a href="#section2">Details</a></li>
+        <li><a href="#section3">FAQ</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main>
+    <section id="section1">
+      <h2>Introduction</h2>
+      <p>Welcome to our site. Here's what you need to know.</p>
+    </section>
+
+    <section id="section2">
+      <h2>Details</h2>
+      <p>Here’s the full breakdown...</p>
+    </section>
+
+    <section id="section3">
+      <h2>FAQ</h2>
+      <p>Common questions and answers go here.</p>
+    </section>
+  </main>
+
+  <!-- Footer with Secondary Navigation -->
+  <footer>
+    <nav aria-label="Footer links">
+      <ul>
+        <li><a href="/privacy">Privacy Policy</a></li>
+        <li><a href="/terms">Terms of Use</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2025 My Website</p>
+  </footer>
+
+</body>
+</html>

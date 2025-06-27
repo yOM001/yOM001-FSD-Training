@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<htnml lang="en">
+   <head>
+    <meta charset="UTF-8"/>
+    <title>Survey Form</title>
+   </head>
+    <body>
+        <h1 id="title">Yom Survey Form</h1>
+        <p id="description">This survey is required to know to serve you better</p>
+        <form id="survey-form">
+            <p><label for="name" id="name-label">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" name="Name" required></p>
+            <p><label for="email" id="email-label">Email</label>
+            <input type="email" id="email" placeholder="Enter your Email" name="Email" required></p>
+            <p><label for="number" id="number-label">Age</label>
+            <input type="number" id="number" placeholder="Age" name="Age" min="10" max="90" required></p>
+            <p>Select Level of Education </p>
+            <select id="dropdown" name="level of education">
+                <option value="highschool">High School</option>
+                <option selected value="undergraduate">Undergraduate</option>
+                <option value="postgraduate">Postgraduate</option>
+                <option value="phd">PhD</option>
+            </select>
+            <p>Are you willing to further studies if required?</p>
+            <label for="studies-yes">Yes</label>
+            <input type="radio" id="studies-yes" name="studies" value="yes">
+            <label for="studies-no">No</label>
+            <input type="radio" id="studies-no" name="studies" value="no">
+            <p>What job(s) are you willing to engaging in?</p>
+            <label for="job1">Software Engineer</label>
+            <input type="checkbox" id="job1" name="job1" value="software engineer">
+            <label for="job2">Data Scientist</label>
+            <input type="checkbox" id="job2" name="job2" value="data scientist">
+            <label for="job3">Web Developer</label>
+            <input checked type="checkbox" id="job3" name="job3" value="web developer">
+            <label for="job4">Data Analyst</label>
+            <input type="checkbox" id="job4" name="job4" value="data analyst">
+            <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Enter your comments here"></textarea>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </body> 
+</htnml>
